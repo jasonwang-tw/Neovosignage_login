@@ -80,10 +80,6 @@ a:hover {
   font-weight: 300;
 }
 
-.btn:focus {
-  background-color: #f8f8f8;
-}
-
 .btnMain {
   color: white;
   background-color: #f5a100;
