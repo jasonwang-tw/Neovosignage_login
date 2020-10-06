@@ -1,0 +1,167 @@
+html,
+body {
+  height: 100%;
+}
+
+::selection {
+  background-color: #f5a100;
+  color: #fff;
+}
+
+*:focus,
+.custom-control-input:focus ~ .custom-control-label::before {
+  border-color: #ffe0a7 !important;
+  box-shadow: 0 0 0 0.2rem #ffd24a40 !important;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before,
+.custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+  background-color: #ffe0a7;
+  border-color: #f5a100;
+  color: #f5a100;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-color: #f5a100;
+}
+
+.custom-checkbox .custom-control-label::before {
+  border-radius: 0;
+}
+
+a,
+p,
+span,
+ul,
+ol,
+li,
+div,
+select,
+option,
+input,
+label,
+button {
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: #f5a100;
+}
+a:hover {
+  color: #ffbd43;
+}
+
+.required:after {
+  content: "*";
+  color: red;
+  margin-left: 10px;
+}
+
+.inputStyle {
+  border-color: white;
+  background-color: #f8f8f8;
+}
+
+.inputStyle:focus {
+  background-color: #f8f8f8;
+}
+
+.btn {
+  font-weight: 300;
+}
+
+.btn:focus {
+  background-color: #f8f8f8;
+}
+
+.btnMain {
+  color: white;
+  background-color: #f5a100;
+}
+.btnMain:hover {
+  color: white;
+  background-color: #ffbd43;
+}
+
+.btnMainOutline {
+  border-color: #f5a100;
+  color: #f5a100;
+  background-color: white;
+}
+.btnMainOutline:hover {
+  color: white;
+  background-color: #f5a100;
+}
+
+.btnDark {
+  color: white;
+  background-color: #000;
+}
+.btnDark:hover {
+  color: white;
+  background-color: #333333;
+}
+
+.bgStyle {
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.loginLeft {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+}
+
+.loginRight {
+  background-image: url(../images/cloud_bg.png);
+  background-position: center bottom;
+}
+
+.loginRightContent {
+  margin-top: 150px;
+  max-width: 500px;
+}
+
+.lanuageBar {
+  max-width: 500px;
+  width: 100%;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, 0);
+  position: absolute;
+}
+
+.btnSignage {
+  width: 150px;
+}
+
+@media (max-width: 576px) {
+  .loginRightContent {
+    margin-top: 100px;
+  }
+
+  .submitBox button,
+.createAccount a {
+    width: 100%;
+  }
+
+  .loginLogo {
+    width: 75%;
+  }
+
+  .lanuageBar {
+    bottom: 0;
+    margin: 50px 0;
+    position: relative;
+  }
+}

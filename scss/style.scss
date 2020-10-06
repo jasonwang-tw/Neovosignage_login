@@ -1,0 +1,194 @@
+$main:#f5a100;
+$mainHover:#ffbd43;
+$borderFocus: #ffe0a7;
+$dark: #000;
+$dark-50: #333333;
+$inputBg: #f8f8f8;
+$white : white;
+
+
+html,
+body {
+    height: 100%;
+}
+
+::selection {
+    background-color: $main;
+    color: #fff;
+}
+
+*:focus,
+.custom-control-input:focus~.custom-control-label::before {
+    border-color: $borderFocus !important;
+    box-shadow: 0 0 0 0.2rem #ffd24a40 !important;
+}
+
+.custom-control-input:checked~.custom-control-label::before,
+.custom-control-input:not(:disabled):active~.custom-control-label::before {
+    background-color: $borderFocus;
+    border-color: $main;
+    color: $main;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    background-color: $main;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0;
+    // border: none;
+    // background-color: rgb(212, 212, 212);
+}
+
+.custom-control-input:focus:not(:checked)~.custom-control-label::before {
+    // background-color: $borderFocus;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    // color: $main;
+
+}
+
+a,
+p,
+span,
+ul,
+ol,
+li,
+div,
+select,
+option,
+input,
+label,
+button {
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    color: $main;
+
+    &:hover {
+        color: $mainHover;
+    }
+}
+.required:after{
+    content: '*';
+    color: red;
+    margin-left: 10px;
+}
+
+.inputStyle {
+    border-color: $white;
+    background-color: $inputBg;
+}
+
+.inputStyle:focus {
+    background-color: $inputBg;
+}
+
+.btn {
+    font-weight: 300;
+}
+
+.btn:focus {
+    background-color: $inputBg;
+}
+
+.btnMain {
+    color: $white;
+    background-color: $main;
+
+    &:hover {
+        color: $white;
+        background-color: $mainHover;
+    }
+}
+
+.btnMainOutline {
+    border-color: $main;
+    color: $main;
+    background-color: $white;
+
+    &:hover {
+        color: $white;
+        background-color: $main;
+    }
+}
+
+.btnDark {
+    color: $white;
+    background-color: $dark;
+
+    &:hover {
+        color: $white;
+        background-color: $dark-50;
+    }
+}
+
+.bgStyle {
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+// Main
+
+.loginLeft {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+}
+
+.loginRight {
+    background-image: url(../images/cloud_bg.png);
+    background-position: center bottom;
+}
+
+.loginRightContent {
+    margin-top: 150px;
+    max-width: 500px;
+}
+
+.lanuageBar {
+    max-width: 500px;
+    width: 100%;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, 0);
+    position: absolute;
+}
+
+.btnSignage {
+    width: 150px;
+}
+
+
+@media (max-width: 576px) {
+    .loginRightContent {
+        margin-top: 100px;
+    }
+
+    .submitBox button,
+    .createAccount a {
+        width: 100%;
+    }
+
+    .loginLogo {
+        width: 75%;
+    }
+
+    .lanuageBar {
+        bottom: 0;
+        margin: 50px 0;
+        position: relative;
+    }
+}
